@@ -56,7 +56,7 @@ jobs:
         id: deploy
         uses: peaceiris/actions-gh-pages@v3.8.0
         with:
-          deploy_key: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./build
       - id: deployOutcome
         if: always()
@@ -80,7 +80,7 @@ jobs:
           username: "${{ github.repository }} - ${{ github.workflow }} #${{ github.run_number }}"
           avatar-url: "https://media.discordapp.net/attachments/857447804977152000/894758305690452039/success_kid.png"
           title: "✅ Deployment status: SUCCESS!"
-          description: "🌐 [Visit the site](https://GoToGroMSP-20.github.io/GoToGroMSP-20/)."
+          description: "🌐 [Visit the site](https://gotogromsp-20.github.io/GoToGroMSP-20/)."
           include-details: "false"
           color-success: "#2eb886"
 
