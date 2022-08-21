@@ -1,6 +1,7 @@
 {
+  "homepage": "https://GoToGroMSP-20.github.io/GoToGroMSP-20/",
   "name": "gotogro-msp20",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
