@@ -56,7 +56,7 @@ jobs:
         id: deploy
         uses: peaceiris/actions-gh-pages@v3.8.0
         with:
-          deploy_key: ${{ secrets.DEPLOY_KEY }}
+          deploy_key: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./build
       - id: deployOutcome
         if: always()
