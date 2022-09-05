@@ -1,5 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
+import Button from './components/Button/Button';
+
+function alertBrowser() {
+  alert("Hi");
+}
 
 function App() {
   return (
@@ -17,6 +22,7 @@ function App() {
         >
           Learn React
         </a>
+        <Button buttonName={"This is button"} onClickFunction={alertBrowser}/>
       </header>
     </div>
   );
