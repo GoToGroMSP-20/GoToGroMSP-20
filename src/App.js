@@ -2,19 +2,30 @@ import logo from './logo.svg';
 import './App.css';
 import Button from './components/Button/Button';
 
+function alertBrowser() {
+  alert("Hi");
+}
+
 function App() {
-  function alertBrowser() {
-    alert("this be alert")
-  }
-  function consoleLogBrowser() {
-    console.log("this be log")
-  }
-  return(
-    <div>
-      <Button buttonName={"This is a button."} onClickFunction={alertBrowser}/>
-      <Button buttonName={"different button."} onClickFunction={consoleLogBrowser}/>
+  return (
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+        <Button buttonName={"This is button"} onClickFunction={alertBrowser}/>
+      </header>
     </div>
   );
-};
+}
 
 export default App;
