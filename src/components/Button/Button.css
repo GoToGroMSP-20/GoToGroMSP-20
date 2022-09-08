@@ -1,12 +1,32 @@
 .button {
   color: white;
+  padding: 12px 24px;
   border: none;
   border-radius: 7px;
-  padding: 12px 24px;
-  background-color: hsla(83, 100%, 37%, 1);
+  font-weight: 600;
 }
 
-.button:hover {
+.button[buttonType="primary"] {
+  background-color: var(--clr-primary_2);
+}
+
+.button[buttonType="secondary"] {
+  color: var(--clr-primary);
+  border: 2px solid var(--clr-primary);
+  background-color: hsla(0, 0%, 0%, 0);
+}
+
+.button[disabled] {
+  color: var(--clr-placeholder);
+  background-color: var(--clr-disabled);
+}
+
+.button[buttonType="primary"]:hover,
+.button[buttonType="secondary"]:hover {
   cursor: pointer;
-  background-color: hsla(83, 100%, 18%, 1);
+  background-color: var(--clr-primary_3);
+}
+
+.button[disabled]:hover {
+  cursor: not-allowed;
 }
