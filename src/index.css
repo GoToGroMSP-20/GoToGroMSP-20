@@ -1,13 +1,40 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Global styles to be used across the app */
+:root {
+  --clr-black: #0C0E0F;
+  --clr-white: #FFFFFF;
+  --clr-disabled: #ABB6BA;
+  --clr-placeholder: #808080;
+  --clr-error: #E74C3C;
+  --clr-primary: #A0FF47;
+  --clr-primary_2: #75BD00;
+  --clr-primary_3: #395C00;
+  --clr-secondary: #141819;
+  --clr-secondary_2: #21292C;
+  --clr-secondary_3: #141819;
+  --clr-warning: #F7CD00;
+
+  font-size: 16px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.25rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+table, th, td, tr {
+  font-family: "Consolas";
+  font-size: 1.125rem;
+}
+
+body, input, textarea, button {
+  font-family: 'Inter', 'sans-serif';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
