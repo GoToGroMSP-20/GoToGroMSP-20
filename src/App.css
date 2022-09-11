@@ -36,3 +36,21 @@
     transform: rotate(360deg);
   }
 }
+
+/*
+  Order Form
+*/
+#orderform{
+  background: #0C0E0F;
+  color: #FFFFFF;
+}
+#order_h1{
+
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 58px;
+}
+.submit_btn{
+  background: #75BD00;
+  border-radius: 7px;
+}

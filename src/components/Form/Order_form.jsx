@@ -3,10 +3,10 @@ function Button({ buttonName, onClickFunction }) {
       onClickFunction();
     }
     return (
-      <section class="apply" id="apply">
-        <h1>Add New Order</h1>
-        <form name="form" id="form" action="postjobprocess.php" method="POST">
-          <p class="form">
+      <section id="orderform">
+        <h1 id="order_h1">Add New Order</h1>
+        <form name="order" id="order" action="" method="POST">
+        <p class="form">
             <label for="orderid" class="label-name">
               <span class="content-name">Order ID : </span>
             </label>
