@@ -1,13 +1,13 @@
 import logo from "./logo.svg";
 import "./App.css";
-import Button from "./components/Button/Button";
+import Order from "./components/Form/Order_form";
 
 function App() {
   function alertBrowser(){
     //alert("Naboo");
     console.log("Naboo");
   }
-  return <Button buttonName={"Breach"}  onClickFunction={alertBrowser}/>;
+  return <Order buttonName={"Breach"}  onClickFunction={alertBrowser}/>;
 }
 
 export default App;
