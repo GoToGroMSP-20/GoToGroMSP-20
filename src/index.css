@@ -38,3 +38,14 @@ body, input, textarea, button {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.Form {
+  box-sizing: border-box;
+
+position: relative;
+width: 684px;
+height: 689px;
+
+border: 1px dashed #9747FF;
+border-radius: 5px;
+}
