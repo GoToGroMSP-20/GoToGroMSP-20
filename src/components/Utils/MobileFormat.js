@@ -1,8 +1,9 @@
 export const validateMobileFormat = (string) => {
   // initialize local variables
   let result = true;
-  const mobile_pattern = /^[\d\s]{10,12}$/;
-  var mobile = string.value.trim();
+  const mobile_pattern = /^[\d]{10}$/;
+  let string = string.replace(/\s+/g, "");
+  let mobile = string.value.trim();
   if (!mobile == "") {
     if (!mobile_pattern.test(mobile)) {
       console.log("The Mobile Number must only contain digits\n");
