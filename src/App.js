@@ -1,9 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
-import Button from './components/Button/Button';
+import { Button } from './components/Button/Button';
 
 function alertBrowser() {
-  alert("Hi");
+  alert("Function executed");
 }
 
 function App() {
@@ -22,8 +22,15 @@ function App() {
         >
           Learn React
         </a>
-        <Button buttonName={"This is button"} onClickFunction={alertBrowser}/>
+        <Button buttonType={"primary"} onClickFunction={alertBrowser}>This is primary button</Button>
+        <Button buttonType={"secondary"} onClickFunction={alertBrowser}>This is secondary button</Button>
+        <Button isDisabled onClickFunction={alertBrowser}>This is disabled button</Button>
       </header>
+      <table>
+        <td>
+          <tr>Hi</tr>
+        </td>
+      </table>
     </div>
   );
 }

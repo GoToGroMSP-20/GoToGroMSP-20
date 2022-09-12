@@ -1,13 +1,11 @@
 import "./Button.css";
 
-function Button ({buttonName, onClickFunction}) {
-  function handleClick() {
+export const Button = ({buttonType, isDisabled, onClickFunction, children}) => {
+  const handleClick = () => {
     onClickFunction();
   };
 
   return (
-    <button className="button" onClick={handleClick}>{buttonName}</button>
+    <button className="button" buttonType={buttonType} disabled={isDisabled} onClick={handleClick}>{children}</button>
   );
 }
-
-export default Button;
