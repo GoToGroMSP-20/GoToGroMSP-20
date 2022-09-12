@@ -1,12 +1,23 @@
-function Button({ buttonName, onClickFunction }) {
-  function handleClick() {
-    onClickFunction();
-  }
-  return (
-    <div className="App">
-      <button onClick={handleClick}>{buttonName}</button>
-    </div>
-  );
-}
+import "./Button.css";
 
-export default Button;
+export const Button = ({
+  buttonType,
+  isDisabled,
+  onClickFunction,
+  children,
+}) => {
+  const handleClick = () => {
+    onClickFunction();
+  };
+
+  return (
+    <button
+      className="button"
+      buttonType={buttonType}
+      disabled={isDisabled}
+      onClick={handleClick}
+    >
+      {children}
+    </button>
+  );
+};
