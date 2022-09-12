@@ -12,72 +12,34 @@ function alertBrowser() {
 function App() {
   const [values, setValues] = useState({
     firstName: "",
-    lastName: "",
-    dob: "",
-    email: "",
-    phoneNumber: ""
+    dob: ""
   });
 
   const inputs = [
     {
       id: 1,
+      label: "First Name",
       name: "firstName",
       type: "text",
+      placeHolder: "firstname",
+      required: true,
       errorMessage: "This didn't work rip",
-      successMessage: "This worked yay!",
-      label: "First Name",
-      pattern: "^[A-Za-z]$",
-      required: true
+      successMessage: "This worked yay!"
     },
     {
       id: 2,
-      name: "lastName",
-      type: "text",
-      errorMessage: "This didn't work rip",
-      successMessage: "This worked yay!",
-      label: "Last Name",
-      pattern: "^[A-Za-z]$",
-      required: true
-    },
-    {
-      id: 3,
+      label: "Date Of Birth",
       name: "dob",
       type: "date",
+      required: true,
       errorMessage: "This didn't work rip",
-      successMessage: "This worked yay!",
-      label: "Last Name",
-      placeHolder: "dd / mm / yyyy",
-      required: true
-    },
-    {
-      id: 4,
-      name: "email",
-      type: "email",
-      errorMessage: "This didn't work rip",
-      successMessage: "This worked yay!",
-      label: "Email",
-      required: true
-    },
-    {
-      id: 5,
-      name: "mobileNumber",
-      type: "text",
-      errorMessage: "This didn't work rip",
-      successMessage: "This worked yay!",
-      label: "Mobile Number (Optional)",
-      pattern: "^[0-9]{10}$"
+      successMessage: "This worked yay!"
     }
   ];
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-  };
 
   const onChange = (e) => {
     setValues({...values, [e.target.name]: e.target.value});
   };
-
-
 
 
   return (
@@ -95,18 +57,23 @@ function App() {
         >
           Learn React
         </a>
-        <div className='Form'>
-        <h3>Test Form</h3>
-        {inputs.map((input) => (
-          <InputField
-            key={input.id}
-            {...input}
-            value={values[input.name]}
-            onChange={onChange}
-          />
-        ))}
-        </div>
-        </header>
+        </header><br/><br/>
+        <body>
+          {inputs.map((input) => (
+            <InputField
+              key={input.id}
+              label={input.label}
+              name={input.name}
+              type={input.type}
+              value={values[input.name]}
+              placeHolder={input.placeHolder}
+              required={input.required}
+              onChange={onChange}
+              errorMessage={input.errorMessage}
+              successMessage={input.successMessage}
+            />
+          ))}
+        </body>
     </div>
   );
 }

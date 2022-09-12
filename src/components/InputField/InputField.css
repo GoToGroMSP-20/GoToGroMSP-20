@@ -2,58 +2,68 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0px;
-    gap: 5px;
+
+    gap: 0.313rem;
+    margin-bottom: 0.5rem;
 }
 
-label {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
+.inputField label {
     line-height: 19px;
-    color: #FFFFFF;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    
 }
 
-input {
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 12px 16px;
-    gap: 10px;
+.inputField[validationState="0"] label {
+    color: var(--clr-white);
+}
 
+.inputField[validationState="1"] label {
+    color: var(--clr-primary);
+}
+
+.inputField[validationState="-1"] label {
+    color: var(--clr-error);
+}
+
+.inputField input {
+    background-color: hsla(0, 0%, 0%, 0);
+    
+    color: var(--clr-white);
+    padding: 12px 16px;
+
+    box-sizing: border-box;
     width: 600px;
     height: 43px;
-    border: 2px solid #FFFFFF;
     border-radius: 7px;
-    flex: none;
-    align-self: stretch;
-    flex-grow: 0;
 }
 
-span {
-    display: none;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
-    color: #FFFFFF;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+.inputField[validationState="0"] input {
+    border: 2px solid var(--clr-white);
 }
 
-input:invalid[focused="true"] {
-    border: 1px solid red;
+.inputField[validationState="1"]  input {
+    border: 2px solid var(--clr-primary);
 }
 
-input:invalid[focused="true"] ~ span {
-    display: block;
+.inputField[validationState="-1"] input {
+    border: 2px solid var(--clr-error);
+}
+
+.inputField::placeholder {
+    color: var(--clr-placeholder)
+}
+
+.inputField span {
+    font-size: 0.75rem;
+}
+
+.inputField[validationState="0"] span {
+    visibility: hidden;
+}
+
+.inputField[validationState="1"] span {
+    color: var(--clr-primary);
+}
+
+.inputField[validationState="-1"] span {
+    color: var(--clr-error);
 }
 
