@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/GoToGroMSP-20/static/css/main.7663ef38.css",
-    "main.js": "/GoToGroMSP-20/static/js/main.22b2ad14.js",
+    "main.css": "/GoToGroMSP-20/static/css/main.622b160c.css",
+    "main.js": "/GoToGroMSP-20/static/js/main.5c794d46.js",
     "static/js/787.32e6ec99.chunk.js": "/GoToGroMSP-20/static/js/787.32e6ec99.chunk.js",
     "static/media/logo.svg": "/GoToGroMSP-20/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/GoToGroMSP-20/index.html",
-    "main.7663ef38.css.map": "/GoToGroMSP-20/static/css/main.7663ef38.css.map",
-    "main.22b2ad14.js.map": "/GoToGroMSP-20/static/js/main.22b2ad14.js.map",
+    "main.622b160c.css.map": "/GoToGroMSP-20/static/css/main.622b160c.css.map",
+    "main.5c794d46.js.map": "/GoToGroMSP-20/static/js/main.5c794d46.js.map",
     "787.32e6ec99.chunk.js.map": "/GoToGroMSP-20/static/js/787.32e6ec99.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7663ef38.css",
-    "static/js/main.22b2ad14.js"
+    "static/css/main.622b160c.css",
+    "static/js/main.5c794d46.js"
   ]
 }
