@@ -1,7 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
 import { Button } from "./components/Button/Button";
-import Order from "./components/Form/Order_form";
 
 function alertBrowser() {
   alert("Function executed");
