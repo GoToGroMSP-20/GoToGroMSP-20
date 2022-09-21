@@ -8,9 +8,14 @@ export const AddOrder = () => {
     <div className="AddOrder">
       <h1 className="App-header">Add New Order</h1>
       <form>
-        <InputField label={"Order ID"} placeholder={"A78D4S5S5"} />
+        <InputField
+          label={"Order ID"}
+          placeholder={"A78D4S5S5"}
+          id={"transaction_id"}
+        />
         <InputField
           label={"Member ID"}
+          id={"member_id"}
           type={"email"}
           placeholder={"alfie.santos@gmail.com"}
         />
