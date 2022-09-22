@@ -9,11 +9,11 @@ export const AddMember = () => {
         <h1 className="white-text">Add New Member</h1>
         <h3 className="white-text">Personal Info</h3>
         <form>
-            <InputField label={"First Name"}/>
-            <InputField label={"Last Name"}/>
-            <InputField label={"Date of Birth"} type={"date"}/>
-            <InputField label={"Email"}/>
-            <InputField label={"Add Number"}/>
+            <InputField label={"First Name"} name={"firstName"}/>
+            <InputField label={"Last Name"} name={"lastName"}/>
+            <InputField label={"Date of Birth"} type={"date"} name={"dob"}/>
+            <InputField label={"Email"} name={"email"}/>
+            <InputField label={"Mobile Number (Optional)"} name={"mobileNumber"}/>
             <Button buttonType={"primary"} isDisabled={true}>Add Member</Button>
         </form>
     </div>
