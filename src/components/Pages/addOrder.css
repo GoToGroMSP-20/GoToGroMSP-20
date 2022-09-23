@@ -1,5 +1,5 @@
 .white-text {
-  color: #ffffff;
+    color: var(--clr-white)
 }
 
 .addmember {
@@ -7,16 +7,4 @@
   margin-top: 48px;
 }
 
-#orderform {
-  background: #0c0e0f;
-  color: #ffffff;
-}
-#order_h1 {
-  font-weight: 600;
-  font-size: 48px;
-  line-height: 58px;
-}
-.submit_btn {
-  background: #75bd00;
-  border-radius: 7px;
-}
+
