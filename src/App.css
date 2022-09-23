@@ -1,10 +1,7 @@
 .App {
-  text-align: center;
-  background-color: #282c34;
-  align-items: center;
+  background-color: var(--clr-black);
   display: flex;
   flex-direction: column;
-  justify-content: center;
   min-height: 100vh;
 }
 
