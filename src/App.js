@@ -1,8 +1,9 @@
 import logo from "./logo.svg";
 import { useState } from "react";
-import "./App.css";
-import { Button } from "./components/Button/Button";
-import { InputField } from "./components/InputField/InputField";
+import './App.css';
+import { Button } from './components/Button/Button';
+import { InputField } from './components/InputField/InputField';
+import { AddMember } from './pages/AddMember/AddMember';
 import { AddOrder } from "./components/Pages/addOrder";
 
 function alertBrowser() {
@@ -44,6 +45,7 @@ function App() {
   return (
     <div className="App">
       <AddOrder />
+      <AddMember/>
     </div>
   );
 }
