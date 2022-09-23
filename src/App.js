@@ -1,3 +1,4 @@
+
 import logo from "./logo.svg";
 import { useState } from "react";
 import './App.css';
@@ -6,8 +7,10 @@ import { InputField } from './components/InputField/InputField';
 import { AddMember } from './pages/AddMember/AddMember';
 import { AddOrder } from "./components/Pages/addOrder";
 
+
 function alertBrowser() {
   alert("Function executed");
+  console.log("Function executed");
 }
 
 function App() {
