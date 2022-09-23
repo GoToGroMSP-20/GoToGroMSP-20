@@ -1,10 +1,10 @@
-import logo from './logo.svg';
+import logo from "./logo.svg";
 import { useState } from "react";
 import './App.css';
 import { Button } from './components/Button/Button';
 import { InputField } from './components/InputField/InputField';
 import { AddMember } from './pages/AddMember/AddMember';
-
+import { AddOrder } from "./components/Pages/addOrder";
 
 function alertBrowser() {
   alert("Function executed");
@@ -13,7 +13,7 @@ function alertBrowser() {
 function App() {
   const [values, setValues] = useState({
     firstName: "",
-    dob: ""
+    dob: "",
   });
 
   const inputs = [
@@ -25,7 +25,7 @@ function App() {
       placeHolder: "firstname",
       required: true,
       errorMessage: "This didn't work rip",
-      successMessage: "This worked yay!"
+      successMessage: "This worked yay!",
     },
     {
       id: 2,
@@ -34,17 +34,17 @@ function App() {
       type: "date",
       required: true,
       errorMessage: "This didn't work rip",
-      successMessage: "This worked yay!"
-    }
+      successMessage: "This worked yay!",
+    },
   ];
 
   const onChange = (e) => {
-    setValues({...values, [e.target.name]: e.target.value});
+    setValues({ ...values, [e.target.name]: e.target.value });
   };
-
 
   return (
     <div className="App">
+      <AddOrder />
       <AddMember/>
     </div>
   );
