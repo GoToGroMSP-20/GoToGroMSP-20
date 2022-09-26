@@ -1,0 +1,29 @@
+.navbar {
+  height: 100vh;
+  width: fit-content;
+  background-color: var(--clr-secondary);
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: row;
+  padding: 1.5rem 1.5rem 4rem 1.5rem;
+}
+
+.company-name {
+  color: var(--clr-white);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.company-app-name {
+  color: var(--clr-primary);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.logo {
+  color: var(--clr-primary);
+  width: 48px;
+  height: 48px;
+}
