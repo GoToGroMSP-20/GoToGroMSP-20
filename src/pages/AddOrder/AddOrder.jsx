@@ -1,11 +1,11 @@
 import React from "react";
-import { Button } from "../Button/Button";
-import { InputField } from "../InputField/InputField";
+import { Button } from "../../components/Button/Button";
+import { InputField } from "../../components/InputField/InputField";
 import "./AddOrder.css";
 
 export const AddOrder = () => {
   return (
-    <div className="AddOrder">
+    <div className="addorder">
       <h1 className="white-text">Add New Order</h1>
       <form>
         <InputField

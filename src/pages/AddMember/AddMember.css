@@ -1,8 +1,4 @@
-.white-text {
-    color: var(--clr-white)
-}
-
 .addmember {
-    margin-left: 145px;
-    margin-top: 48px;
+  margin-left: 9rem;
+  margin-top: 3rem;
 }
