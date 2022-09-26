@@ -35,6 +35,10 @@ table, th, td, tr {
   font-size: 1.125rem;
 }
 
+.white-text {
+  color: var(--clr-white)
+}
+
 body, input, textarea, button {
   font-family: 'Inter', 'sans-serif';
   -webkit-font-smoothing: antialiased;
