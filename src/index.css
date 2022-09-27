@@ -20,6 +20,7 @@
 
 h1 {
   font-size: 3rem;
+  padding-bottom: 1.5rem !important;
 }
 
 h2 {
@@ -28,6 +29,7 @@ h2 {
 
 h3 {
   font-size: 1.5rem;
+  padding-bottom: 0.5rem !important;
 }
 
 table, th, td, tr {
@@ -35,11 +37,8 @@ table, th, td, tr {
   font-size: 1.125rem;
 }
 
-.white-text {
-  color: var(--clr-white)
-}
-
 body, input, textarea, button {
+  color: var(--clr-white);
   font-family: 'Inter', 'sans-serif';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
