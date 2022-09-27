@@ -6,17 +6,17 @@ export const validateEmailFormat = (string) => {
   // Email Pattern taken from https://stackoverflow.com/questions/46155/how-to-validate-an-email-address-in-javascript
   const email_pattern =
     /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-  let email = string.value.trim();
-  if (!email === "") {
+  let email = string.trim();
+  if (email !== "") {
     if (!email_pattern.test(String(email).toLowerCase())) {
-      console.log("The Email is not valid\n");
+      console.error("The Email is not valid\n");
       return validationStatus.failure;
     } else {
       return validationStatus.success;
       //console.log("The Email is valid\n");
     }
   } else {
-    console.log("The Email cannot be Empty\n");
+    console.error("The Email cannot be Empty\n");
     return validationStatus.failure;
   }
 };
