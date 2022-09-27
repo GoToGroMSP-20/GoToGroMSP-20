@@ -1,3 +1,5 @@
+import { validationStatus } from "./validationStatus";
+
 export const validateEmailFormat = (string) => {
   // initialize local variables
   //let result = true;
@@ -5,7 +7,7 @@ export const validateEmailFormat = (string) => {
   const email_pattern =
     /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   let email = string.value.trim();
-  if (!email == "") {
+  if (!email === "") {
     if (!email_pattern.test(String(email).toLowerCase())) {
       console.log("The Email is not valid\n");
       return validationStatus.failure;

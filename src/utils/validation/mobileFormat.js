@@ -1,11 +1,13 @@
+import { validationStatus } from "./validationStatus";
+
 export const validateMobileFormat = (string) => {
   // initialize local variables
   //let result = true;
   const mobile_pattern = /^[\d]{10}$/;
-  let string = string.replace(/\s+/g, "");
-  let mobile = string.value.trim();
-  if (!mobile == "") {
-    if (!mobile_pattern.test(mobile)) {
+  const sanitizedString = string.replace(/\s+/g, "");
+  let mobileNumber = sanitizedString.value.trim();
+  if (!mobileNumber === "") {
+    if (!mobile_pattern.test(mobileNumber)) {
       console.log("The Mobile Number must only contain digits\n");
       return validationStatus.failure;
     } else {

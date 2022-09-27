@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { validationStatus } from "../../utils/validationStatus";
+import { validationStatus } from "../../utils/validation/validationStatus";
 import "./InputField.css";
 
 export const InputField = (props) => {
