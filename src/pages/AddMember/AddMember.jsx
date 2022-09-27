@@ -6,6 +6,7 @@ import { Popup } from "../../components/Popup/Popup";
 import { addMember } from "../../utils/API";
 import { validateEmailFormat } from "../../utils/validation/emailFormat";
 import { validateMobileFormat } from "../../utils/validation/mobileFormat";
+import { useNavigate } from "react-router-dom";
 
 export const AddMember = () => {
   const successPopupRef = useRef(null);
@@ -17,6 +18,11 @@ export const AddMember = () => {
     email: "",
     mobile: "",
   });
+
+  const navigate = useNavigate();
+  const changeRoute = (route) => {
+    navigate(route);
+  }
 
   const handleOnChange = (e) => {
     const {name, value} = e.target;
@@ -44,10 +50,10 @@ export const AddMember = () => {
         <Button buttonType={"primary"} isDisabled={false}>Add Member</Button>
       </form>
       <Popup ref={successPopupRef} popupType={"success"} dialogueText="Add member successful">
-        <Button buttonType={"primary"}>Add an Order</Button>
+        <Button buttonType={"primary"} onClickFunction={() => changeRoute("/add-order")}>Add an Order</Button>
       </Popup>
       <Popup ref={errorPopupRef} popupType={"error"} dialogueText="Oops! Something broke from our end. Please contact our technicians for support (Error code: 500)">
-        <Button buttonType={"primary"}>Back to Add Order</Button>
+        <Button buttonType={"primary"} onClickFunction={() => changeRoute("/add-order")}>Back to Add Order</Button>
       </Popup>
     </div>
   );
