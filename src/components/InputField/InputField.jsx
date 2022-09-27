@@ -7,7 +7,7 @@ export const InputField = (props) => {
   const {label, name, type, value, placeHolder, required, onChange, successMessage, errorMessage, validationFunction} = props;
 
   const handleOnBlur = (e) => {
-    setValidationState(validationFunction(e.target.value));
+    validationFunction && setValidationState(validationFunction(e.target.value));
   };
 
   return (
