@@ -47,7 +47,7 @@ export const AddMember = () => {
         <InputField onChange={handleOnChange} required value={memberToAdd.dob} label={"Date of Birth"} type={"date"} name={"dob"}/>
         <InputField onChange={handleOnChange} required value={memberToAdd.email} label={"Email"} name={"email"} validationFunction={validateEmailFormat} errorMessage="Email not valid"/>
         <InputField onChange={handleOnChange} required value={memberToAdd.mobile} label={"Mobile Number (Optional)"} name={"mobile"} validationFunction={validateMobileFormat} errorMessage="Mobile number not valid"/>
-        <Button buttonType={"primary"} isDisabled={false}>Add Member</Button>
+        <Button buttonType={"primary"}>Add Member</Button>
       </form>
       <Popup ref={successPopupRef} popupType={"success"} dialogueText="Add member successful">
         <Button buttonType={"primary"} onClickFunction={() => changeRoute("/add-order")}>Add an Order</Button>
