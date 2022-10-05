@@ -1,21 +1,14 @@
 import './App.css';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { AddMember } from './pages/AddMember/AddMember';
 import { AddOrder } from "./pages/AddOrder/AddOrder";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { NavBar } from './components/NavBar/NavBar';
 
 function App() {
-  // const [values, setValues] = useState({
-  //   firstName: "",
-  //   dob: "",
-  // });
-
-  // const onChange = (e) => {
-  //   setValues({ ...values, [e.target.name]: e.target.value });
-  // };
-
   return (
     <div className="App">
       <Router basename='/GoToGroMSP-20'>
+        <NavBar/>
         <Routes>
           <Route path="/" element={<AddOrder/>} />
           <Route path="/add-order" element={<AddOrder/>} />
