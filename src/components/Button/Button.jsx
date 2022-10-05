@@ -1,8 +1,8 @@
 import "./Button.css";
 
-export const Button = ({buttonType, isDisabled, onClickFunction, children}) => {
+export const Button = ({buttonType, isDisabled=false, onClickFunction, children}) => {
   const handleClick = () => {
-    onClickFunction();
+    onClickFunction && onClickFunction();
   };
 
   return (

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { validationStatus } from "../../utils/validationStatus";
+import { validationStatus } from "../../utils/validation/validationStatus";
 import "./InputField.css";
 
 export const InputField = (props) => {
@@ -7,7 +7,7 @@ export const InputField = (props) => {
   const {label, name, type, value, placeHolder, required, onChange, successMessage, errorMessage, validationFunction} = props;
 
   const handleOnBlur = (e) => {
-    setValidationState(validationFunction(e.target.value));
+    validationFunction && setValidationState(validationFunction(e.target.value));
   };
 
   return (
